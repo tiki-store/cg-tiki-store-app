@@ -1,0 +1,35 @@
+shoppe
+Hùng, An
+
+1. Tự cắt giao diện
+2. Đăng ký tài khoản
+- Có regex khi đăng ký: không để trống, k
+- Hiển thị mật khẩu: Ok
+- Xác nhận mật khẩu chỉ mới validate trên FE, chưa validate BE (-5)
+- Xác thực email thật (+10)
+- Lỗi phông chữ khi gửi mail xác thực đăng ký tài khoản (-2)
+- Chưa mã hóa mật khẩu (-5)
+3. Hiển thị danh sách sản phẩm
+- Sử dụng Ajax, call API để không cần load lại trang
+- Hover, transform product item
+- Chưa có trang chi tiết sản phẩm
+- Sai hành vi người dùng: người dùng click chuột sản phẩm phải vào trang chi tiết,
+mà lại add sản phẩm vào giỏ hàng (-5)
+4. Giỏ hàng:
+- Thêm nhiều sản phẩm vào giỏ hàng
+- Cập nhật số lượng sản phẩm đang có trong giỏ hàng (bị bug nhỏ chỗ số lượng)
+- Chưa format tiền tệ
+- Có so sánh tiền trong ví với tổng tiền
+- Chưa lưu dữ dữ liệu order
+- Có chức năng sàn
+5. Banner, slider: interval, click
+
+6. Đăng xuất: Ok
+7. Đăng nhập:
+- Chưa check tài khoản sai định dạng (-5)
+- Đăng nhập thất bại: ok
+- Đăng nhập thành công
+8. Danh mục sản phẩm
+9. Danh sách sản phẩm theo danh mục
+10. Quản lý danh sách sản phẩm trong shop
+
