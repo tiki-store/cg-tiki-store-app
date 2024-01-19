@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
-</head>
-<body>
-    <h2>Hello World</h2>
-</body>
+<html xmlns:th="http://www.thymeleaf.org">
+    <th:block th:replace="~{layout/head :: head}"></th:block>
+    <th:block th:replace="~{layout/body :: body}"></th:block>
 </html>

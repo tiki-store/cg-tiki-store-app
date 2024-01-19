@@ -1,0 +1,119 @@
+<body xmlns:th="http://www.thymeleaf.org"
+      th:fragment="body"
+      id="home-version-1" class="home-version-1"
+      data-style="default">
+
+    <div class="site-content">
+        <!--=========================-->
+        <!--=        Header         =-->
+        <!--=========================-->
+        <th:block th:replace="~{common/header/main-header :: main-header}"></th:block>
+        <!--Main Header end-->
+
+        <!--=========================-->
+        <!--=        Mobile Header     =-->
+        <!--=========================-->
+        <th:block th:replace="~{common/header/mobile-header :: mobile-header}"></th:block>
+
+        <div class="accordion-wrapper">
+
+            <!-- Mobile Menu Navigation
+                ============================================= -->
+            <th:block th:replace="~{common/menu/mobile-menu :: mobile-menu}"></th:block>
+        </div>
+        <!--=========================-->
+        <!--=        Slider         =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/slider :: slider}"></th:block>
+        <!-- Slides end -->
+
+        <!--=========================-->
+        <!--=        Banner         =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/banner :: banner}"></th:block>
+        <!-- banner -->
+
+        <!--=========================-->
+        <!--=        Product Filter      =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/product/product-filter :: product-filter}"></th:block>
+        <!-- main-product -->
+
+        <!--=========================-->
+        <!--=        Feature Area      =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/features :: features}"></th:block>
+        <!-- /.feature-area -->
+
+        <!--=========================-->
+        <!--=   Product  area Two   =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/product/product-banner :: product-banner}"></th:block>
+        <!-- main-product -->
+
+        <!--=========================-->
+        <!--=   Discount Countdown area   =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/discount :: discount}"></th:block>
+
+        <!--=========================-->
+        <!--=   Small Product area    =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/product/product-small :: product-small}"></th:block>
+
+        <!--=========================-->
+        <!--=   Instagram area      =-->
+        <!--=========================-->
+        <th:block th:replace="~{pages/home/instagram :: instagram}"></th:block>
+        <!-- /.instagram-area end-->
+
+        <!--=========================-->
+        <!--=   Footer area      =-->
+        <!--=========================-->
+        <th:block th:replace="~{common/footer :: footer}"></th:block>
+        TODO: need to split footer UI
+        <!-- footer-widget-area -->
+
+        <!-- Back to top
+        ======================================== -->
+        <div class="backtotop">
+            <i class="fa fa-angle-up backtotop_btn"></i>
+        </div>
+
+        <!--=========================-->
+        <!--=   Popup area      =-->
+        <!--=========================-->
+
+        <!-- Popup -->
+        <th:block th:replace="~{common/popup :: popup}"></th:block>
+
+        <!--=========================-->
+        <!--=   Product Quick view area    =-->
+        <!--=========================-->
+        <!-- Quick View -->
+        <th:block th:replace="~{common/quick-view :: quick-view}"></th:block>
+
+    </div>
+    <!-- /#site -->
+
+    <!-- Dependency Scripts -->
+    <script th:src="@{/dependencies/jquery/jquery.min.js}"></script>
+    <script th:src="@{/dependencies/popper.js/popper.min.js}"></script>
+    <script th:src="@{/dependencies/bootstrap/js/bootstrap.min.js}"></script>
+    <script th:src="@{/dependencies/owl.carousel/js/owl.carousel.min.js}"></script>
+    <script th:src="@{/dependencies/wow/js/wow.min.js}"></script>
+    <script th:src="@{/dependencies/isotope-layout/js/isotope.pkgd.min.js}"></script>
+    <script th:src="@{/dependencies/imagesloaded/js/imagesloaded.pkgd.min.js}"></script>
+    <script th:src="@{/dependencies/jquery.countdown/js/jquery.countdown.min.js}"></script>
+    <script th:src="@{/dependencies/gmap3/js/gmap3.min.js}"></script>
+    <script th:src="@{/dependencies/venobox/js/venobox.min.js}"></script>
+    <script th:src="@{/dependencies/slick-carousel/js/slick.js}"></script>
+    <script th:src="@{/dependencies/headroom/js/headroom.js}"></script>
+    <script th:src="@{/dependencies/jquery-ui/js/jquery-ui.min.js}"></script>
+
+    <!--Google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBrMPsyNtpwKXPPpG54XwJXnyobfMAIc"></script>
+
+    <!-- Site Scripts -->
+    <script th:src="@{/assets/js/app.js}"></script>
+</body>
